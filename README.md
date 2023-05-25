@@ -1,5 +1,5 @@
 # SuperHeroesJgv
 
--START THE PROYECT *requires docker
+-START THE PROJECT *requires docker
 
 - docker compose up
