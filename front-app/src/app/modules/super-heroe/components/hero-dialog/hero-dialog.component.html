@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>
+  <span *ngIf="hero.id" class="primary">Editar {{ hero.name }}</span>
+  <span *ngIf="!hero.id" class="primary">Nuevo super héroe</span>
+</h1>
+<form [formGroup]="heroForm" (ngSubmit)="saveHero()">
+<div mat-dialog-content class="">
+  <div class="d-flex flex-column">
+    <mat-form-field>
+      <mat-label>Nombre</mat-label>
+      <input matInput [(ngModel)]="hero.name" formControlName="name" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>URL Imagen</mat-label>
+      <input matInput [(ngModel)]="hero.image" formControlName="image" required>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Textarea</mat-label>
+      <textarea matInput style="min-height: 10rem;" formControlName="description" [(ngModel)]="hero.description"></textarea>
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions class="d-flex justify-content-end gap-1 m-3">
+  <button mat-button color="warn" mat-dialog-close>Cerrar</button>
+  <button mat-button color="primary" mat-dialog-close type="submit" [disabled]="!heroForm.valid">Guardar</button>
+</div>
+</form>

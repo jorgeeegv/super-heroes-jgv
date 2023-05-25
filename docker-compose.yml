@@ -1,0 +1,16 @@
+version: "3"
+services:
+  frontend:
+    container_name: front-container
+    build:
+      context: ./front-app
+      dockerfile: Dockerfile
+    ports:
+    - 4200:4200
+  backend:
+    container_name: back-container
+    build:
+      context: ./back-app
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000

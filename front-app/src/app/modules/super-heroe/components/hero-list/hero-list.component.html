@@ -1,0 +1,40 @@
+<section class="w-100 mx-auto d-flex justify-content-center pb-4">
+  <mat-form-field class="w-25">
+    <input matInput [(ngModel)]="heroSearchText" color="accent" placeholder="Escribe un nombre de super héroe"
+      (ngModelChange)="heroSearchTextSubject.next($event)">
+  </mat-form-field>
+</section>
+<div class="flex flex-wrap justify-content-center mx-auto row w-100 grid gap-3">
+  <div *ngFor="let hero of heroes" class="col-3 m-10">
+    <mat-card class="hero-card">
+      <img class="card-img" [src]="hero.image" [routerLink]="['/hero',hero.id]" role="button">
+      <div class="h-50">
+        <mat-card-header>
+          <mat-card-title>{{ hero.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card-subtitle>{{ hero.description }}</mat-card-subtitle>
+        </mat-card-content>
+      </div>
+      <mat-card-actions class="p-3 justify-content-end gap-3 card-actions">
+        <span class="material-icons md-24 mat-button pointer" role="button" (click)="createOrUpdate(hero)">edit</span>
+        <span mat-button class="material-icons md-24" role="button" (click)="showDeleteModal(hero)">delete</span>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<mat-paginator class="pt-5 mt-5" style="background-color: gray !important;color: whitesmoke !important;" [pageSize]="2" [length]="100" (page)="handlePageEvent($event)" aria-label="Select page">
+</mat-paginator>
+<button mat-fab class="add-button" (click)="createOrUpdate()" color="warn">
+  <mat-icon>add</mat-icon>
+</button>
+<ng-template #deleteHeroAlert let-hero>
+  <h1 mat-dialog-title class="text-center w-100">AVISO</h1>
+  <div mat-dialog-content>
+    ¿Esta seguro que desea eliminar a <strong>{{ hero.name }}</strong> ?
+  </div>
+  <div mat-dialog-actions class="p-2 justify-content-end gap-2 card-actions">
+    <button mat-button mat-dialog-close>Cerrar</button>
+    <button mat-button mat-dialog-close color="warn" [mat-dialog-close]="true">Eliminar</button>
+  </div>
+</ng-template>

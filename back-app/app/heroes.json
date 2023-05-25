@@ -1,0 +1,58 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Spiderman",
+      "image": "https://cdn6.dibujos.net/images/listas/135/spiderman.jpg",
+      "description": "Científico, vigilante, profesor, fotógrafo, superhéroe. Fuerza, velocidad, durabilidad, agilidad, sentidos, reflejos, coordinación, equilibrio y resistencia sobrehumanos. Fisiología de la araña: Precognitiva capacidad de sentido arácnido, se aferra a la mayoría de las superficies sólidas y la capacidad de las redes."
+    },
+    {
+      "id": 5,
+      "name": "Ironman",
+      "image": "https://cdn6.dibujos.net/images/listas/135/ironman.jpg",
+      "description": "Tony Stark, es un multimillonario magnate empresarial estadounidense, playboy e ingenioso científico. Sufrió una grave lesión en el pecho durante un secuestro. Sus secuestradores intentan forzarlo a construir un arma de destrucción masiva, pero él crea una armadura poderosa para salvar su vida y escapar del cautiverio."
+    },
+    {
+      "id": 6,
+      "name": "Falcon",
+      "image": "https://cdn6.dibujos.net/images/listas/135/falcon.jpg",
+      "description": "Como el superhéroe Falcon, Wilson usa alas mecánicas para volar, y tiene un control telepático y empático limitado sobre las aves. Tras la jubilación de Steve Rogers y Sam se convierte en el nuevo Capitán América y líder de Los Vengadores."
+    },
+    {
+      "id": 7,
+      "name": "Hulk",
+      "image": "https://cdn6.dibujos.net/images/listas/135/hulk.jpg",
+      "description": "Hulk es un enorme ser humanoide de piel verde, corpulento y musculoso que tiene una gran fortaleza física. Su alter ego es el Dr. Robert Bruce Banner, un físico físicamente débil, socialmente retraído y reservado, las dos personalidades existentes como independientes y con resentimiento de la otra."
+    },
+    {
+      "id": 8,
+      "name": "Daredevil",
+      "image": "https://cdn6.dibujos.net/images/listas/135/daredevil.jpg",
+      "description": "Daredevil es un atleta de nivel olímpico y gimnasta con la habilidad acrobática de un artista de circo y las habilidades pugilísticas de un boxeador de peso pesado, así como velocidad, resistencia y reflejos fenomenales."
+    },
+    {
+      "id": 9,
+      "name": "Doctor Strange",
+      "image": "https://cdn6.dibujos.net/images/listas/135/doctor-strange.jpg",
+      "description": "Doctor Strange sirve como el Hechicero Supremo, el principal protector de la Tierra contra las amenazas mágicas y místicas. Inspirado en historias de magia negra y Chandu el Mago, Strange fue creado durante la edad de plata de los cómics para traer un tipo diferente de personajes y temas a Marvel."
+    },
+    {
+      "id": 10,
+      "name": "La viuda negra",
+      "image": "https://cdn6.dibujos.net/images/listas/135/viuda-negra.jpg",
+      "description": "La viuda negra hembra es negra y brillante usualmente, con un distintivo rojo de un reloj de arena (vea la foto) en el inferior del abdomen. El distintivo abdominal puede variar de color naranja amaril- lenta a rojo y su forma puede variar de un reloj de arena a un punto.\n"
+    },
+    {
+      "id": 11,
+      "name": "Deadpool",
+      "image": "https://cdn6.dibujos.net/images/listas/135/deadpool.jpg",
+      "description": "Fuerza, resistencia, agilidad y reflejos sobrehumanos. Francotirador, espadachín, experto en artes marciales y explosivos. Inmunidad telepática (debido a su retorcida mente, provoca que sea infranqueable).\n"
+    },
+    {
+      "image": "https://cdn6.dibujos.net/images/listas/135/lobezno.jpg",
+      "name": "Lobezno",
+      "description": "Es un mutante que posee sentidos afinados a los animales, capacidades físicas mejoradas, poderosa capacidad de regeneración conocida como un factor de curación, y tres garras retráctiles en cada mano. Wolverine ha sido representado de diversas formas como miembro de los X-Men, Alpha Flight, Fuerza-X y Los Vengadores.",
+      "id": 12
+    }
+  ]
+}
