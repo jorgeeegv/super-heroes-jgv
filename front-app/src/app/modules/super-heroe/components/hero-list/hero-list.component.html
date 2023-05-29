@@ -10,7 +10,7 @@
       <img class="card-img" [src]="hero.image" [routerLink]="['/hero',hero.id]" role="button">
       <div class="h-50">
         <mat-card-header>
-          <mat-card-title>{{ hero.name }}</mat-card-title>
+          <mat-card-title class="p-2 bold">{{ hero.name | uppercase }}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
           <mat-card-subtitle>{{ hero.description }}</mat-card-subtitle>
@@ -23,7 +23,7 @@
     </mat-card>
   </div>
 </div>
-<mat-paginator class="pt-5 mt-5" style="background-color: gray !important;color: whitesmoke !important;" [pageSize]="2" [length]="100" (page)="handlePageEvent($event)" aria-label="Select page">
+<mat-paginator class="pt-5 mt-5" style="background-color: transparent !important; color: whitesmoke !important;" [pageSize]="2" [length]="100" (page)="handlePageEvent($event)" aria-label="Select page">
 </mat-paginator>
 <button mat-fab class="add-button" (click)="createOrUpdate()" color="warn">
   <mat-icon>add</mat-icon>

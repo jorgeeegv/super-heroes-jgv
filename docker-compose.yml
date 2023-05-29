@@ -1,4 +1,5 @@
-version: "3"
+#Dev version
+version: "3" 
 services:
   frontend:
     container_name: front-container
@@ -6,7 +7,13 @@ services:
       context: ./front-app
       dockerfile: Dockerfile
     ports:
-    - 4200:4200
+      - 4200:4200
+    stdin_open: true
+    environment:
+      - WATCHPACK_POLLING=true # Need for reload angular in dev
+    volumes:
+      - "./front-app:/app"
+      - "front-end-dependencies:/app/node_modules"
   backend:
     container_name: back-container
     build:
@@ -14,3 +21,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3000:3000
+    volumes:
+      - "./back-app:/api"
+      - "back-end-dependencies:/api/node_modules"
+volumes:
+  front-end-dependencies:
+  back-end-dependencies:

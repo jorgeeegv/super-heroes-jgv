@@ -27,12 +27,10 @@ export class SuperHeroesService {
     })
   }
   public async addHero(hero: Hero) {
-    debugger
     this.SuperHeroesResourceService.addHero(hero).then(() => this.getHeroList())
   }
 
   public async saveHero(hero: Hero) {
-    debugger
     return this.SuperHeroesResourceService.updateHero(hero).then(() => this.getHeroList())
   }
   public async deleteHero(hero: Hero) {

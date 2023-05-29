@@ -4,3 +4,4 @@ back-app/node_modules
 front-app/node_modules
 front-app/.vscode
 front-app/.editorconfig
+front-app/.angular/*

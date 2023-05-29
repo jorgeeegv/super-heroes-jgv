@@ -1,10 +1,11 @@
 .header-container {
   display: flex;
-  width: 50%;
+  width: 25%;
   justify-content: space-between;
+  align-items: center;
   &-block {
     display: flex;
-    width: 50%;
+    width: 25%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -13,4 +14,9 @@
 .loading-bar{
   z-index: 20;
   position: relative;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  color: whitesmoke !important;
 }

@@ -1,5 +1,5 @@
 <h1 mat-dialog-title>
-  <span *ngIf="hero.id" class="primary">Editar {{ hero.name }}</span>
+  <span *ngIf="hero.id" class="primary">Editar {{ hero.name  | titlecase }}</span>
   <span *ngIf="!hero.id" class="primary">Nuevo super héroe</span>
 </h1>
 <form [formGroup]="heroForm" (ngSubmit)="saveHero()">
